@@ -1,0 +1,50 @@
+[
+    {
+        "id": "dipper" ,
+        "image": "./assets/images/dipper.png"
+    },
+    {
+        "id": "doofenshmirtz" ,
+        "image": "./assets/images/doofenshmirtz.jpg"
+    },
+    {
+        "id": "ferb" ,
+        "image": "./assets/images/Ferb.jpg"
+    },
+    {
+        "id": "grunkle-stan" ,
+        "image": "./assets/images/grunkle-stan.jpg"
+    },
+    {
+        "id": "heckapoo" ,
+        "image": "./assets/images/heckapoo.png"
+    },
+    {
+        "id": "mabel" ,
+        "image": "./assets/images/mabel.png"
+    },
+    {
+        "id": "marco" ,
+        "image": "./assets/images/marco.png"
+    },
+    {
+        "id": "perry" ,
+        "image": "./assets/images/perry-the-platypus.jpg"
+    },
+    {
+        "id": "phineas" ,
+        "image": "./assets/images/Phineas.jpg"
+    },
+    {
+        "id": "star-butterfly" ,
+        "image": "./assets/images/star-butterfly.png"
+    },
+    {
+        "id": "tom" ,
+        "image": "./assets/images/Tom-d.png"
+    },
+    {
+        "id": "wendy" ,
+        "image": "./assets/images/wendy.jpg"
+    }
+]
