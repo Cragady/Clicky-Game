@@ -1,15 +1,6 @@
 import React, { Component } from 'react';
 import chars from "./../chars.json";
-
-class ImageComp extends Component {
-    render() {
-        const srcPath = this.props.src;
-        const altNam = this.props.alt;
-        return(
-            <img className="foto" src={srcPath} alt={altNam} />
-        );
-    };
-};
+import ImageComp from "./ImageComp";
 
 class ThePortrayer extends Component{
     render(){
@@ -21,7 +12,7 @@ class ThePortrayer extends Component{
         };
         console.log(imgees);
         return(
-            <div>
+            <div className="row row-cust">
                 {imgees}
             </div>
         );
