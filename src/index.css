@@ -13,6 +13,13 @@ body {
 .foto-hold{
   height: 155px;
   background: rgba(198, 216, 207, 0.795);
+  box-shadow: 0.5px 0.5px rgb(112, 110, 110);
+  transition: background 0.5s ease-in-out, box-shadow 0.7s ease-in-out;
+}
+
+.foto-hold:hover{
+  background: rgba(20, 168, 94, 0.795);
+  box-shadow: 5px 5px rgb(92, 91, 91);
 }
 
 .row-cust{

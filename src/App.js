@@ -19,6 +19,8 @@ class App extends Component {
         </header>
         <p className="App-intro">
           Try to Click to the end!
+          <br />
+          No repeats!
         </p>
         <ThePortrayer />
       </div>
