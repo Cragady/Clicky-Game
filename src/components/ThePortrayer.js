@@ -6,9 +6,11 @@ class ThePortrayer extends Component{
     constructor(props){
         super(props);
         this.state = {
-            prevScore: 0,
+            bestScore: 0,
             currentScore: 0,
             clicked: [],
+            lefWin: false,
+            toWin: `Guesses left to win 12`
         };
         this.handleClick = 
             this.handleClick.bind(this);
@@ -32,10 +34,44 @@ class ThePortrayer extends Component{
         return arr;
     };
     handleClick(namPas){
-        this.setState(prevState => ({
-            clicked: [...prevState.clicked, namPas],
-            currentScore: prevState.currentScore + 1
-        }));
+        let passer;
+        if(this.state.currentScore >= this.state.bestScore){
+            passer = this.state.currentScore + 1;
+        } else {
+            passer = this.state.bestScore;
+        };
+        if(this.state.clicked.includes(namPas)){
+            this.setState({
+                clicked: [],
+                currentScore: 0,
+                lefWin: false,
+                toWin: "You lost :( Click an image to try again"
+            });
+            return;
+        };
+        if(((this.state.currentScore + 1) % 12 !== 0) || (this.state.currentScore === 0)){
+            let thaState;
+            if(this.state.lefWin === true){
+                thaState = `You Won! See how high of a score you can get!`;
+            } else {
+                thaState = `Guesses left to win 
+                    ${(this.state.currentScore - 11) * -1}`;
+            };
+            this.setState(prevState => ({
+                clicked: [...prevState.clicked, namPas],
+                currentScore: prevState.currentScore + 1,
+                toWin: thaState,
+                bestScore: passer
+            }));
+        } else {
+            this.setState(prevState => ({
+                clicked: [],
+                currentScore: prevState.currentScore + 1,
+                lefWin: true,
+                toWin: `You Won! See how high of a score you can get!`,
+                bestScore: passer
+            }));
+        };
         console.log(this.state);
     };
     render(){
@@ -54,8 +90,9 @@ class ThePortrayer extends Component{
         return(
             <section className="game-shtuffs">
                 <div className="score-card">
-                    <p>Last Score: {this.state.prevScore}</p>
+                    <p>Best Score: {this.state.bestScore}</p>
                     <p>Current Score: {this.state.currentScore}</p>
+                    <p>{this.state.toWin}</p>
                 </div>
                 <div className="row row-cust">
                     {imgees}
