@@ -27,3 +27,14 @@ body {
   margin-right: 0;
   margin-left: 0;
 }
+
+.score-card{
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  background: rgba(157, 150, 218, 0.74);
+}
+
+.score-el{
+  background: rgba(255, 255, 255, 0.493);
+}

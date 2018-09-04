@@ -89,10 +89,10 @@ class ThePortrayer extends Component{
         this.shufArr(imgees);
         return(
             <section className="game-shtuffs">
-                <div className="score-card">
-                    <p>Best Score: {this.state.bestScore}</p>
-                    <p>Current Score: {this.state.currentScore}</p>
-                    <p>{this.state.toWin}</p>
+                <div className="score-card row row-cust p-3 mb-1">
+                    <p className="card m-auto px-3 score-el">Best Score: {this.state.bestScore}</p>
+                    <p className="card m-auto px-3 score-el">Current Score: {this.state.currentScore}</p>
+                    <p className="card m-auto px-3 score-el">{this.state.toWin}</p>
                 </div>
                 <div className="row row-cust">
                     {imgees}
