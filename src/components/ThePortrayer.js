@@ -72,7 +72,6 @@ class ThePortrayer extends Component{
                 bestScore: passer
             }));
         };
-        console.log(this.state);
     };
     render(){
         const imgees = [];
