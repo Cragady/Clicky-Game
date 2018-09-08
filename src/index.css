@@ -1,3 +1,8 @@
+html, body, #bg-protector-cust {
+  height: 100%;
+  min-height: 100%;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -8,7 +13,6 @@ body {
 
 #bg-protector-cust {
   background: rgba(177, 165, 165, 0.712);
-  height: 100%;
 }
 
 .foto{
