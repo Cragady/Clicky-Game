@@ -20,6 +20,14 @@ Although the user's score has been set to zero, their highest score is saved to 
 
 After each click, `ThePortrayer` is rerendered. With how `ThePortrayer` renders, it pushes all of the images, that are set to the same component template using a for loop, into an array. That array is then shuffled using a method named `shufArr` and rendered.
 
+# **Images**
+* Star Versus the Forces of Evil
+* Gravity Falls
+* Phineas and Ferb
+
+# **Background Image**
+* Photo by Ricardo Gomez Angel on Unsplash @ripato
+
 # **Link**
 
 [Link](https://cragady.github.io/Clicky-Game/)

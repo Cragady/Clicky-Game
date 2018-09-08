@@ -2,7 +2,12 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background: rgb(214, 224, 233);
+  background: url("ricardo-gomez-angel-252099-unsplash.jpg");
+  background-size: cover;
+}
+
+#bg-protector-cust {
+  background: rgba(177, 165, 165, 0.712);
 }
 
 .foto{
