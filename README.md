@@ -1,3 +1,5 @@
+[Application](https://cragady.github.io/Clicky-Game)
+
 # **Purpose**
 
 The purpose of this project was to create a memory game with react. The point of the game is to click through all of the characters, if you click the same character twice, the round ends. The application keeps track of the number of times clicked correctly, and will end the game when the user clicks on a character that they have already clicked that round.
